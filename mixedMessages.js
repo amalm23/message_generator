@@ -45,3 +45,12 @@ for (let prop in inspirationQuotes) {
         personalInspiration.push("Something went wrong...");        
     }
 }
+
+function formatInspiration(inspiration) {
+    const format = inspiration.join("\n");
+    console.log("\n Your inspirational message! \n")
+    console.log(format);
+    console.log("\n Stay motivated!")
+}
+
+formatInspiration(personalInspiration);
