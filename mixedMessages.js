@@ -25,3 +25,23 @@ const inspirationQuotes = {
         "The best is yet to come!"
     ]
 };
+
+let personalInspiration = [];
+
+for (let prop in inspirationQuotes) {
+    let optionIndex = generateRandomNumber(inspirationQuotes[prop].length);
+
+    switch (prop) {
+        case "subject":
+            personalInspiration.push(`${inspirationQuotes[prop][optionIndex]}`);
+            break;
+        case "action":
+            personalInspiration.push(`${inspirationQuotes[prop][optionIndex]}`);
+            break;          
+        case "advice":
+            personalInspiration.push(`${inspirationQuotes[prop][optionIndex]}`);
+            break;  
+        default: 
+        personalInspiration.push("Something went wrong...");        
+    }
+}
